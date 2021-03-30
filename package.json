@@ -1,0 +1,29 @@
+{
+  "name": "afrodev_api_inicial",
+  "version": "1.0.0",
+  "description": "[Arquivo de inicialização",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardapalm/AfroDev_API_inicial.git"
+  },
+  "keywords": [
+    "API_inicial"
+  ],
+  "author": "EduardaPalm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eduardapalm/AfroDev_API_inicial/issues"
+  },
+  "homepage": "https://github.com/eduardapalm/AfroDev_API_inicial#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
