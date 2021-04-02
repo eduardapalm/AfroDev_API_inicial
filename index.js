@@ -1,7 +1,18 @@
 const configExpress = require('./config/configExpress');
+const conexao = require('./infra/conexao');
+const Tabelas = require('./infra/Tabelas');
 
-const app = configExpress();
 
-app.listen(3000, () => {
-    console.log('O servidor rodando na porta 3000')
+conexao.connect(error => {
+    if(error) {
+        throw error;
+    }
+
+    Tabelas.init(conexao)
+    
+    app = configExpress()
+
+    app.listen(3000, () => {
+        console.log('O servidor rodando na porta 3000')
+    });
 });
